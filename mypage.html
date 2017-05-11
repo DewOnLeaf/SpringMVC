@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+</head>
+
+<body>
+	<div>
+		<table class="t1">
+		<caption>Employee List</caption>
+			<tbody>
+				<tr>
+					<th>id</th>
+					<th>name</th>
+					<th>age</th>
+					<th>gender</th>
+				</tr>
+				<tr>
+					<td>001</td>
+					<td>adam</td>
+					<td>20</td>
+					<td>male</td>
+				</tr>
+				<tr>
+					<td>002</td>
+					<td>bob</td>
+					<td>22</td>
+					<td>male</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<br />
+	<button class="btn1" onclick="testInsert()" >inser row</button>	
+</body>
+
+<!-- style -->
+<style type="text/css">
+	table.t1{ width: 100%; text-align: center; background: #c0c0c0; border-radius: 10px }
+	table.t1,tr,th,td{ border: 1px dashed #fff; border-collapse: collapse; }
+	button.btn1{ border: 1px; border-radius: 5px; outline: none;}
+</style>
+
+<!-- script -->
+<script>
+function testInsert() {
+	var t = $('table.t1');
+	alert(t.text());
+}
+</script>
+</html>
